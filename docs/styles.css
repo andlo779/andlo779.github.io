@@ -1,9 +1,33 @@
 body {
   text-align: center;
-  background-color: black;
-  color: white;
+  /* background-color: white; */
+  /* color: black; */
+  font-family: 'Dosis', sans-serif;
+}
+
+section {
+  padding: 3rem;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
 }
 
 h1 {
  color: red; 
+}
+
+.container {
+  width: min(calc(80% -2rem), 60rem);
+  margin-inline: auto;
+}
+
+.black-background {
+  --bg-color: #121212;
+  background-color: var(--bg-color);
+  color: #efefef;
+  box-shadow: 0 0 0 100vmax var(--bg-color);
+  clip-path: inset(0-100vmax);
+
 }
