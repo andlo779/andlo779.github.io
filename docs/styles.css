@@ -1,6 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  text-align: center;
-  background-color: white;
+  background-color: rgb(230, 227, 210);
   color: black;
   font-family: 'Dosis', sans-serif;
 }
@@ -18,16 +23,58 @@ h1 {
  color: red; 
 }
 
+footer {
+  text-align: center;
+}
+
 .container {
-  width: min(calc(80% -2rem), 60rem);
+  width: min(calc(80% - 2rem), 100rem);
   margin-inline: auto;
 }
 
-.black-background {
-  --bg-color: #121212;
+.name-section {
+  padding: 0 3rem;
+  height: 60rem;
+  --bg-color: #111111;
   background-color: var(--bg-color);
   color: #efefef;
   box-shadow: 0 0 0 100vmax var(--bg-color);
   clip-path: inset(0-100vmax);
+}
 
+.top-section {
+  height: 15rem;
+  --bg-color: #000000;
+}
+
+.empty-space {
+  height: 15rem;
+}
+
+.image-text {
+  font-family: 'Bradesco Sans XBold', sans-serif;
+  margin: 0em;
+  background-image: url("20150903_230357.jpg");
+  background-position-y: center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 200px;
+  color: transparent;
+}
+
+.top-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.bottom-left {
+  height: 45rem;
+  display: flex;
+}
+
+.filler {
+  flex: 1 0 auto;
+  align-self: flex-end;
 }
